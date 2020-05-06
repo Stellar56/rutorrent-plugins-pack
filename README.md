@@ -1,0 +1,3 @@
+# rutorrent-plugins-pack
+rutorrent-plugins-pack pour script mondedie
+Attention, non compatible hors script, certains fichiers sont modifiés...
