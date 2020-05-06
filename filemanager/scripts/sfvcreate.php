@@ -1,10 +1,10 @@
 <?php
 
 if(!is_dir($argv[1])) {
-
-	if(!mkdir($argv[1], 0777, TRUE)) {die('Could not create temp dir');}
+if(!mkdir($argv[1], 0777, TRUE)) {
+die('Could not create temp dir');
 }
-
+}
 
 file_put_contents($argv[1].'/pid', getmypid());
 
@@ -19,10 +19,10 @@ if (($sfv  = fopen($argv[2], "abt")) === FALSE) {
 		fwrite($log, '1: SFV HASHING FAILED. File '.$argv[2]." not writable\n"); 
 		fclose($log);
 
-		sleep(20);
+sleep(20);
 		exec('rm -rf '.escapeshellarg($argv[1]));
 
-		die();
+die();
 }
 
 fwrite($sfv, "; ruTorrent File Manager Plugin by HWK\n;\n");
@@ -31,7 +31,10 @@ fwrite($sfv, "; ruTorrent File Manager Plugin by HWK\n;\n");
 foreach($files as $file) {
 	
 	fwrite($log, '0: '.$c.'/'.$t.' hashing '.$file."\n");
-	if(!is_file($file)) {fwrite($log, '0: '.$c.'/'.$t.' FAILED: no such file '.$file."\n"); continue;}
+if(!is_file($file)) {
+		fwrite($log, '0: '.$c.'/'.$t.' FAILED: no such file '.$file."\n");
+continue;
+}
 
 	$hash = hash_file('crc32b', $file);
 	
@@ -45,9 +48,7 @@ fclose($sfv);
 fwrite($log, "1: Done\n");
 fclose($log);
 
-
 sleep(20);
 exec('rm -rf '.escapeshellarg($argv[1]));
-
 
 ?>

@@ -1,14 +1,14 @@
 <?php
-require_once( '../../php/util.php' );
+require_once('../../php/util.php');
 include('conf.php');
 
 
 // unzip should be the latest key index
 foreach(array_merge($fm['archive']['types'], array('unzip')) as $kid => $external) {
-	if((findEXE($external) === false) && isset($fm['archive']['types'][$kid])) { 
+if((findEXE($external) === false) && isset($fm['archive']['types'][$kid])) { 
 		unset($fm['archive']['types'][$kid]); 
-		echo 'log("FILE MANAGER: ',$external,' "+theUILang.fErrMsg[24]);',"\n";
-	}
+	echo 'log("FILE MANAGER: ',$external,' "+theUILang.fErrMsg[24]);',"\n";
+}
 
 }
 
