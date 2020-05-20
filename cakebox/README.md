@@ -1,4 +1,4 @@
-Cakebox-light ⚠️ DEPRECATED ⚠️
+Cakebox-light 2.0
 ===========
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Cakebox/cakebox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) [![GPL V2](http://img.shields.io/badge/license-GPL_V2-blue.svg?style=flat)](http://opensource.org/licenses/GPL-2.0)
