@@ -1,0 +1,5 @@
+## fichier à ignorer
+*~
+*.lock
+*.DS_Store
+*.swp
