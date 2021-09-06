@@ -3,19 +3,22 @@
 // avaialable upload services scheme
 // to use them mark the 'enable' field to true
 $services = array(  			
-					'1fichier' => array(		'enabled' => true,
-									'login' => '',
-									'password' => ''), 
+		'1fichier' => array(
+		'enabled' => true,
+		'login' => '',
+		'password' => ''
+), 
 
-					'2shared' => array('enabled' => true),
-					'4shared' => array('enabled' => true),
-					'bayfiles' => array('enabled' => true),
+	'2shared' => array('enabled' => true),
+	'4shared' => array('enabled' => true),
+	'bayfiles' => array('enabled' => true),
 
-					'dataport_cz' => array(	'enabled' => true,
-									'login' => '',
-									'password' => ''), 
+	'dataport_cz' => array(
+	'enabled' => true,
+	'login' => '',
+	'password' => ''), 
 
-					'depositfiles' => array(	'enabled' => true,
+	'depositfiles' => array(	'enabled' => true,
 									'login' => '',
 									'password' => ''), 
 
@@ -72,7 +75,5 @@ $services = array(
 									'password' => '')
 
 );
-
-
 
 ?>

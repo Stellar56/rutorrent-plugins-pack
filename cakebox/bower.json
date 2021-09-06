@@ -1,7 +1,8 @@
 {
   "name": "cakebox-light",
-  "version": "1.8.6",
-  "dependencies": {
+  "version": "1.9.6",
+  
+"dependencies": {
     "bootstrap": "3.3.x",
     "angular": "~1.5.5",
     "angular-i18n": "~1.5.5",
@@ -16,5 +17,5 @@
     "ng-file-upload": "~12.0.4",
     "crypto-js": "master",
     "angular-cookies": "~1.5.5"
-  }
+}
 }

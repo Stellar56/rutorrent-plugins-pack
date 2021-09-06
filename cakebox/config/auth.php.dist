@@ -33,7 +33,7 @@ $app["users"] = [
         /*
           Web player settings
         */
-        "player.default_type"       => "html5",
+        "player.default_type"       => "vlc",
         "player.auto_play"          => "false",
         /*
           User rights
@@ -54,3 +54,5 @@ $app["users"] = [
         "bs.apikey"                 => ""
     ]
 ];
+
+?>
